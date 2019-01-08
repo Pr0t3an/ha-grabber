@@ -1,5 +1,5 @@
 # ha-grabber
-Grab Hybrid Analysis JSON file once per day
+Grab Hybrid Analysis JSON file once per day(built inscheduler) - maintains json useful for SIEM integration - outputs to new file each time, will add append options maybe at some stage if the need arises
 
 ----------------------------------------------
 
@@ -10,7 +10,7 @@ python3 ha-grabber.py -o /ha-tool/ -t 21:35
 
 ------------------------------------
 
-usage: ha-grabber.py [-h] [-o DIR] [-t TOD] [-a]
+usage: ha-grabber.py [-h] [-o DIR] [-t TOD]
 
 
 Grab JSON file from Hybrid Analysis Once per Day..suggested usage nohup
@@ -23,4 +23,4 @@ optional arguments:
 
   -t TOD, --tod TOD  time of day to run: format hh:mm
 
-  -a, --append       Append or Overwrite file
+
